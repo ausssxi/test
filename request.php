@@ -3,7 +3,7 @@ ini_set('display_errors', 'On');
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'gourmet');
 define('DB_USER', 'root');
-define('DB_PASSWORD', 'nanoninaze');
+define('DB_PASSWORD', 'password');
 
 $options = array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET CHARACTER SET 'utf8'");
 
