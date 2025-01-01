@@ -1,7 +1,7 @@
 <?php
 ini_set('display_errors', "On");
 date_default_timezone_set('Asia/Tokyo');
-$mysqli = new mysqli('localhost', 'root', 'nanoninaze', 'gourmet');
+$mysqli = new mysqli('localhost', 'root', 'password', 'gourmet');
 $mysqli->set_charset("utf8");
 $result = $mysqli->query("SELECT id, name, x(location), y(location), altitude FROM shop WHERE id = 1");
 $param_json = json_encode($result->fetch_assoc());
